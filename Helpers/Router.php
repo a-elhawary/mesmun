@@ -2,11 +2,21 @@
 class Router{
 				private $base="";
 				private $routes;
+				private static $obj;
 
-				public function __construct($base){
+				private function __construct($base){
 								$this->routes = ["get" => [], "post" => []];
 								$this->base = $base;
 				}
+				
+				public static function getRouter($base){
+					if(empty(self::$obj)){
+						self::$obj = new Router($base);
+					}
+					return self::$obj;
+				}
+
+				public function getBase(){return $this->base;}
 
 				private function addRoute($method, $route, $callback){
 							array_push($this->routes[$method], [$this->base.$route, $callback]);
