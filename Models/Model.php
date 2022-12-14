@@ -19,6 +19,15 @@ class Model{
 		return $stmt->fetchAll();
 	}
 
+	public function getBy($col, $val){
+		$sql = "SELECT * FROM ".$this->name." WHERE ".$col."=?;";
+		$stmt = $this->pdo->prepare($sql);
+		$arr = [];
+		array_push($arr, $val);
+		$stmt->execute($arr);
+		return $stmt->fetchAll();
+	}
+
 	// inserts an item into table 
 	public function insert($newRow){
 		// prepare the query

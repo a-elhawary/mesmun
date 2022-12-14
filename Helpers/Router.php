@@ -15,6 +15,10 @@ class Router{
 					}
 					return self::$obj;
 				}
+				
+				public function toRoute($route){
+					header("LOCATION: ".$this->base.$route);
+				}
 
 				public function getBase(){return $this->base;}
 

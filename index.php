@@ -1,5 +1,6 @@
 <?php
 require_once("Helpers/Router.php");
+require_once("Controllers/UsersController.php");
 
 // create a router with a base address
 $router = Router::getRouter("/code/mes_mun");
@@ -18,15 +19,13 @@ $router->get("/events/{id}", function($args){
 });
 
 $router->get("/login", function(){
-	include_once "Views/Pages/login.php";
+	require_once "Views/Pages/login.php";
 });
 
 $router->post("/login", function(){
-	$email = $_POST["email"];
-	$pass = $_POST["password"];
-
-	
+	UsersController::login($_POST["email"], $_POST["password"]);
 });
+	
 
 $router->route();
 ?>
