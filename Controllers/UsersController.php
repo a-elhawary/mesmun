@@ -11,12 +11,12 @@
 	        $users = $users->getBy("email", $email);
             // check user exists
 	        if(empty($users)){
-                showLoginError("Incorrect Email Address");
+                self::showLoginError("Incorrect Email Address");
                 return;
 	        }
             // check password is correct
             if($users[0]["password"] != $password){
-                showLoginError("Incorrect Password");
+                self::showLoginError("Incorrect Password");
                 return;
             }
             // login user
