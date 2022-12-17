@@ -1,13 +1,14 @@
 <?php
 require_once("Helpers/Router.php");
 require_once("Controllers/UsersController.php");
+require_once("Controllers/HomeController.php");
 
 // create a router with a base address
 $router = Router::getRouter("/code/mes_mun");
 
 //define routes
 $router->get("/", function(){
-	echo "<h1>home page</h1>";
+	HomeController::home();
 });
 
 $router->get("/about", function(){

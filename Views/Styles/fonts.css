@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Actay;
+    src: url("Fonts/Actay/Actay-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilland;
+    src: url("Fonts/Gilland/Gilland-Regular.otf") format("opentype");
+}
+
+*{
+    font-family: Actay, sans-serif;
+}
