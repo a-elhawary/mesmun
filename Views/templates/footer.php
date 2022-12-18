@@ -1,3 +1,3 @@
-        <script src="<?= Router::getRouter("")->getBase(); ?>/Views/Scripts/topbar.js"></script>
+        <script src="<?= ObjectManager::getJS("topbar.js") ?>"></script>
     </body>
 </html>

@@ -1,24 +1,48 @@
 body{
     margin:0;
     padding:0;
+    background-color:#eee;
 }
 
-.login{
+.error{
+    color:red;
+    margin:10px 0;
+}
+
+.form{
     padding:2em;
     border-radius:3px;
+    background-color: #fff;
+    margin: 1rem 1rem;
 }
 
-.login > *{
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.form > textarea{
+    resize:none;
+    height: 20ch;
+}
+
+.form > *{
     display:block;
 }
 
-.login-input{
+.form-input{
     box-sizing: border-box;
+    padding:10px;
     width:100%;
     margin-bottom:10px;
 }
 
-.login-button{
+.form-input--file{
+    margin-bottom:10px;
+}
+
+.form-button{
     background-color:#f24b04;
     border:none;
     color:#fff;
@@ -27,12 +51,7 @@ body{
 }
 
 @media only screen and (min-width:900px){
-    body{
-        background-color:#eee;
-    }
-
-    .login{
-        background-color: #fff;
+    .form{
         width:25%;
         position:fixed;
         top:50%;

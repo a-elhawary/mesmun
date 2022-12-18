@@ -1,5 +1,5 @@
 <?php require_once(__DIR__."/../templates/head.php"); ?>
-        <link rel="stylesheet" type="text/css" href="<?php echo Router::getRouter(null)->getBase(); ?>/Views/Styles/home.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo ObjectManager::getCSS("home.css"); ?>" />
         <title>Home | MESMUN</title>
 <?php require_once(__DIR__."/../templates/topbar.php"); ?>
         <div class="landing">

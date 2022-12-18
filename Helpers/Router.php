@@ -2,18 +2,10 @@
 class Router{
 				private $base="";
 				private $routes;
-				private static $obj;
 
-				private function __construct($base){
+				public function __construct($base){
 								$this->routes = ["get" => [], "post" => []];
 								$this->base = $base;
-				}
-				
-				public static function getRouter($base){
-					if(empty(self::$obj)){
-						self::$obj = new Router($base);
-					}
-					return self::$obj;
 				}
 				
 				public function toRoute($route){
