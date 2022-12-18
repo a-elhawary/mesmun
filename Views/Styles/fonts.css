@@ -4,10 +4,18 @@
 }
 
 @font-face {
+    font-family: Actay;
+    font-weight: bold;
+    src: url("Fonts/Actay/ActayWide-Bold.otf") format("opentype");
+}
+
+
+@font-face {
     font-family: Gilland;
     src: url("Fonts/Gilland/Gilland-Regular.otf") format("opentype");
 }
 
 *{
     font-family: Actay, sans-serif;
+    box-sizing: border-box;
 }

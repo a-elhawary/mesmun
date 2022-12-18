@@ -1,3 +1,38 @@
 .landing{
-    background:url();
+    background:url("../Images/background.png");
+    height:100vh;
+    position: static;
+    color:#fff;
+}
+
+.landing-text{
+    position: relative;
+    top:10%;
+    padding:0 1rem;
+}
+
+.landing-title{
+    font-size:4rem;
+    font-weight: bold;
+}
+
+.landing-subtitle{
+    font-size:3rem;
+}
+
+.landing-cta{
+    position: absolute;
+    bottom:1rem;
+    text-align:center;
+    width:100%;
+}
+
+.landing-cta-btn{
+    border:none;
+    background-color: #fff;
+    padding:1em;
+    text-transform: uppercase;
+    border-radius:4px;
+    margin-top:10px;
+    color:#471ca9;
 }
