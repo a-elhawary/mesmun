@@ -11,8 +11,8 @@ $router->get("/", function(){
 	HomeController::home();
 });
 
-$router->get("/about", function(){
-	echo "<h1>about page</h1>";
+$router->get("/events", function(){
+	require_once "Views/Pages/events.php";
 });
 
 $router->get("/events/{id}", function($args){

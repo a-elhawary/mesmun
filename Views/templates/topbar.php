@@ -10,7 +10,7 @@
                     <a href="<?= Router::getRouter("")->getBase(); ?>/">Home</a>
                 </li>
                 <li class="topbar-link">
-                    <a href="">About</a>
+                    <a href="<?= Router::getRouter("")->getBase(); ?>/events">Events</a>
                 </li>
                 <li class="topbar-link">
                     <a href="">Contact Us</a>
