@@ -1,0 +1,50 @@
+body{
+    background-color:#eee;
+}
+
+.main{
+    width:90%;
+    margin: 1rem auto;
+}
+
+.card{
+    background-color:#fff;
+    border-radius: 4px;
+    padding:1rem;
+    margin:1rem 0;
+}
+
+.button, .button--inverse, .button--transparent{
+    border:none;
+    color:#fff;
+    padding:1em 2em;
+    border-radius:3px;
+    display:inline-block;
+}
+
+.button{
+    background:linear-gradient(to bottom right, #f24b04, #471ca9);
+}
+
+.button--inverse{
+    background-color:#fff;
+    color:#f24b04;
+}
+
+.button--transparent{
+   background-color: transparent; 
+   border: 1px solid #f24b04 ;
+   color:#f24b04;
+}
+
+@media only screen and (min-width: 950px){
+    .card{
+        width:40%;
+        display:inline-block;
+        margin: 0 1rem;
+    }
+
+    .main{
+        width:60%;
+    }
+}

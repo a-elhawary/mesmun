@@ -14,6 +14,10 @@ class ObjectManager {
         return self::$base."/Views/Templates/".$file;
     }
 
+    public static function getUpload($file){
+        return self::$base."/Views/Uploads/".$file;
+    }
+
     public static function getPage($file){
         return self::$base."/Views/Pages/".$file;
     }

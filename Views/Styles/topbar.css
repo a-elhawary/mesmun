@@ -11,7 +11,7 @@ body{
 .topbar-top-mobile{
     display:flex;
     justify-content:space-between;
-    background-color:#f24b04;
+    background:linear-gradient(to bottom right, #f24b04, #471ca9);
     padding:0.5rem 1rem;
 }
 
@@ -50,10 +50,12 @@ body{
 @media only screen and (min-width: 950px){
     .topbar{
         display:flex;
+        background:linear-gradient(to bottom right, #f24b04, #471ca9);
     }
 
     .topbar-top-mobile{
         flex-grow:1;
+        background: transparent;
     }
 
     .topbar-logo{
@@ -71,7 +73,7 @@ body{
         visibility: visible;
         justify-content: space-between;
         padding-right:2rem;
-        background-color:#f24b04;
+        background-color:transparent;
         color:#fff;
     }
 
